@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel - Resultados de Busqueda</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- <link rel="stylesheet" href="https://allyoucan.cloud/cdn/icofont/1.0.1/icofont.css"> -->
+</head>
+
+<!-- Referencias Web
+    Trulia.com 
+-->
+
+<body class="body-search">
+
+    <header class="header-panel-search">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark p-0 nav-panel-result" id="nav-header">
+            <div class="container-fluid" style="padding-left: 5px;">
+                <a href="index.html" class="navbar-brand">
+                    <div class="logo-2"></div>
+                </a>
+
+                <button class="navbar navbar-toggler mr-3 mr-md-0" data-toggle="collapse" data-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Menu"><span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="menu-services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nuestros Servicios</a>
+                            <div class="dropdown-menu" ariallabelledby="menu-services">
+                                <a class="dropdown-item" href="#">Alojamiento de Mascotas</a>
+                                <a class="dropdown-item" href="#">Guardería de Mascotas</a>
+                                <a class="dropdown-item" href="#">Paseador de perros</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="menu-registro" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registrarse</a>
+                            <div class="dropdown-menu" ariallabelledby="menu-registro">
+                                <a class="dropdown-item" href="#">Registrarse como Buddy</a>
+                                <a class="dropdown-item" href="#">Registrarse como Dueño</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Ayuda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-panel">
+        <div class="container-fluid" style="padding-left: 5px;">
+            <div class="row">
+                <!-- Panel de filtros de busqueda -->
+                <div class="col-auto p-0">
+                    <aside class="form-wrap">
+                        <form action="" method="POST">
+                            <div class="form-group">
+                                <i class=""></i>
+                                <input type="text" class="form-control" name="place-find" id="place-find" placeholder="Search...">
+                            </div>
+                            <div class="form-group">
+                                <label for="f-service">Servicio</label>
+                                <select class="form-control f-service" id="f-service" name="Servicio">
+                                    <option value="1">petServices</option>
+                                    <option value="2">petServices</option>
+                                    <option value="3">petServices</option>
+                                    <option value="4">petServices</option>
+                                    <option value="5">petServices</option>
+                                    <option value="6">petServices</option>
+                                </select>
+                            </div>
+                            <div class="form-group mb-0">
+                                <label>Fecha</label>
+                                <div class="form-row">
+                                    <div class="form-group col-6">
+                                        <input type="text" id="" class="form-control" placeholder="Inicio">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="text" id="" class="form-control" placeholder="Fin">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label>Mascota</label>
+                                <br>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" id="" value="1"> Perro
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <label class="form-check-label">
+                                        <input class="form-check-input" type="checkbox" id="" value="2"> Gato
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="">Raza</label>
+                                <input type="text" name="Raza" class="form-control" placeholder="Mi mascota es...">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Peso (Kg)</label>
+                                <input type="text" name="Raza" class="form-control" placeholder="Mi mascota pesa...">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Cantidad</label>
+                                <input type="text" name="Raza" class="form-control" placeholder="Numero de mascotas...">
+                            </div>
+                        </form>
+                    </aside>
+                </div>
+                <!-- Resultado de buddies buscados y mapa con su ubicacion -->
+                <div class="col">
+                    <div class="row">
+                        <div class="col-xs-12 p-0">
+                            <div class="search-results-box d-flex flex-nowrap" id="results-panel">
+                                <div class="buddy-card">
+                                    <a href="#">
+                                        <div class="buddy-card-wrapper d-flex flex-row">
+                                            <div class="buddy-card-photo">
+                                                <!-- <img src="img/panel/img1.jpg" alt="photo-buddie"> -->
+                                            </div>
+                                            <div class="buddy-card-body">
+                                                <div class="buddy-card-favorite"><i class=""></i></div>
+                                                <div class="buddy-card-name">Jean Smith</div>
+                                                <div class="buddy-card-description"><strong>Amante de las mascotas por siempre</strong><small class="address d-block">2.5 Km - San Pedro</small></div>
+                                                <div class="buddy-card-rating">
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="buddy-card-review"><strong>Review:</strong> <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi temporibus non ducimus labore totam nihil modi voluptate!</small></div>
+                                        <div class="buddy-card-available d-flex justify-content-between">
+                                            <span class="text-available">Disponible</span>
+                                            <span class="text-date">15 Ago - 18 Ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="buddy-card">
+                                    <a href="#">
+                                        <div class="buddy-card-wrapper d-flex flex-row">
+                                            <div class="buddy-card-photo">
+                                                <!-- <img src="img/panel/img1.jpg" alt="photo-buddie"> -->
+                                            </div>
+                                            <div class="buddy-card-body">
+                                                <div class="buddy-card-favorite"><i class=""></i></div>
+                                                <div class="buddy-card-name">Jean Smith</div>
+                                                <div class="buddy-card-description"><strong>Amante de las mascotas por siempre</strong><small class="address d-block">2.5 Km - San Pedro</small></div>
+                                                <div class="buddy-card-rating">
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="buddy-card-review"><strong>Review:</strong> <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi temporibus non ducimus labore totam nihil modi voluptate!</small></div>
+                                        <div class="buddy-card-available d-flex justify-content-between">
+                                            <span class="text-available">Disponible</span>
+                                            <span class="text-date">15 Ago - 18 Ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="buddy-card">
+                                    <a href="#">
+                                        <div class="buddy-card-wrapper d-flex flex-row">
+                                            <div class="buddy-card-photo">
+                                                <!-- <img src="img/panel/img1.jpg" alt="photo-buddie"> -->
+                                            </div>
+                                            <div class="buddy-card-body">
+                                                <div class="buddy-card-favorite"><i class=""></i></div>
+                                                <div class="buddy-card-name">Jean Smith</div>
+                                                <div class="buddy-card-description"><strong>Amante de las mascotas por siempre</strong><small class="address d-block">2.5 Km - San Pedro</small></div>
+                                                <div class="buddy-card-rating">
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="buddy-card-review"><strong>Review:</strong> <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi temporibus non ducimus labore totam nihil modi voluptate!</small></div>
+                                        <div class="buddy-card-available d-flex justify-content-between">
+                                            <span class="text-available">Disponible</span>
+                                            <span class="text-date">15 Ago - 18 Ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="buddy-card">
+                                    <a href="#">
+                                        <div class="buddy-card-wrapper d-flex flex-row">
+                                            <div class="buddy-card-photo">
+                                                <!-- <img src="img/panel/img1.jpg" alt="photo-buddie"> -->
+                                            </div>
+                                            <div class="buddy-card-body">
+                                                <div class="buddy-card-favorite"><i class=""></i></div>
+                                                <div class="buddy-card-name">Jean Smith</div>
+                                                <div class="buddy-card-description"><strong>Amante de las mascotas por siempre</strong><small class="address d-block">2.5 Km - San Pedro</small></div>
+                                                <div class="buddy-card-rating">
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="buddy-card-review"><strong>Review:</strong> <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi temporibus non ducimus labore totam nihil modi voluptate!</small></div>
+                                        <div class="buddy-card-available d-flex justify-content-between">
+                                            <span class="text-available">Disponible</span>
+                                            <span class="text-date">15 Ago - 18 Ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="buddy-card">
+                                    <a href="#">
+                                        <div class="buddy-card-wrapper d-flex flex-row">
+                                            <div class="buddy-card-photo">
+                                                <!-- <img src="img/panel/img1.jpg" alt="photo-buddie"> -->
+                                            </div>
+                                            <div class="buddy-card-body">
+                                                <div class="buddy-card-favorite"><i class=""></i></div>
+                                                <div class="buddy-card-name">Jean Smith</div>
+                                                <div class="buddy-card-description"><strong>Amante de las mascotas por siempre</strong><small class="address d-block">2.5 Km - San Pedro</small></div>
+                                                <div class="buddy-card-rating">
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="buddy-card-review"><strong>Review:</strong> <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi temporibus non ducimus labore totam nihil modi voluptate!</small></div>
+                                        <div class="buddy-card-available d-flex justify-content-between">
+                                            <span class="text-available">Disponible</span>
+                                            <span class="text-date">15 Ago - 18 Ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="buddy-card">
+                                    <a href="#">
+                                        <div class="buddy-card-wrapper d-flex flex-row">
+                                            <div class="buddy-card-photo">
+                                                <!-- <img src="img/panel/img1.jpg" alt="photo-buddie"> -->
+                                            </div>
+                                            <div class="buddy-card-body">
+                                                <div class="buddy-card-favorite"><i class=""></i></div>
+                                                <div class="buddy-card-name">Jean Smith</div>
+                                                <div class="buddy-card-description"><strong>Amante de las mascotas por siempre</strong><small class="address d-block">2.5 Km - San Pedro</small></div>
+                                                <div class="buddy-card-rating">
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                    <span class="">*</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="buddy-card-review"><strong>Review:</strong> <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi temporibus non ducimus labore totam nihil modi voluptate!</small></div>
+                                        <div class="buddy-card-available d-flex justify-content-between">
+                                            <span class="text-available">Disponible</span>
+                                            <span class="text-date">15 Ago - 18 Ago</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 p-0">
+                            <div class="map-container">
+                                <div id="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCION DE FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="w-head">
+                        <h4><span>Sobre PetBuddy</span></h4>
+                    </div>
+                    <div class="w-body">
+                        <ul>
+                            <a href="#">Quienes somos</a>
+                            <a href="#">Centro de Ayuda</a>
+                            <a href="#">Términos y Condiciones</a>
+                            <a href="#">Política de Privacidad</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="w-head">
+                        <h4><span>Servicios para Mascotas</span></h4>
+                    </div>
+                    <div class="w-body">
+                        <ul>
+                            <a href="#">Alojamiento</a>
+                            <a href="#">Cuidado de Mascotas</a>
+                            <a href="#">Paseo de Perros</a>
+                            <a href="#">Guardería</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="w-head">
+                        <h4><span>Amante de Mascotas</span></h4>
+                    </div>
+                    <div class="w-body">
+                        <ul>
+                            <a href="#">Trabaja con Nosotros</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="w-head">
+                        <h4><span>Contáctenos</span></h4>
+                    </div>
+                    <div class="w-body">
+                        <ul>
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">Linkedin</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SECCION DE COPYRIGHT -->
+    <section class="footer-copyright">
+        <div class="container">
+            <div class="row align-items-center justify-content-center ">
+                <div class="col-auto copyright">
+                    <p class="text-center d-block d-sm-inline">&copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> PetBuddy.</p><span class="copyright"> Todos los derechos reservados.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/slick/slick.min.js"></script>
+    <!-- <script src="plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jQuery-slimScroll/1.3.8/jquery.slimscroll.min.js"></script> -->
+    <!-- <script>
+        $(function() {
+            $('#results-panel').slimScroll({
+                width: '1200px',
+                axis: 'x'
+            });
+        });
+    </script> -->
+    <script>
+        var map;
+        var geocoder;
+        var crLat = 9.9257827;
+        var crLng = -84.0747275;
+
+        function initMap() {
+            geocoder = new google.maps.Geocoder();
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: crLat,
+                    lng: crLng
+                },
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+                // mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+            marker = new google.maps.Marker({
+                map: map,
+                draggable: true,
+                animation: google.maps.Animation.DROP, 
+                position: {
+                    lat: crLat,
+                    lng: crLng
+                }
+            });
+            google.maps.event.addListener(marker, 'dragend', function() {
+                onMakerMove(marker);
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3cOQNB4cQjQDSGWiB_nT2H2pEOuD3w60&callback=initMap" async defer></script>
+    
+</body>
+
+</html>

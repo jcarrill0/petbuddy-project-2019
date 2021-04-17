@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vista - Perfil de Buddy</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- <link rel="stylesheet" href="https://allyoucan.cloud/cdn/icofont/1.0.1/icofont.css"> -->
+</head>
+
+<!-- Referencias Web: 
+    www. rover.com - Referencia principal - carpeta: \screenshot web pet\rover\FireShot Pro Screen Capture #004
+    www.gudog.uk  - carpeta: \screenshot web pet\gudog\FireShot Pro Screen Capture #043 
+    www.en.pawshake.ca - carpeta: \screenshot web pet\pawshake\FireShot Pro Screen Capture #006
+    www.petbacker.com - carpeta: \screenshot web pet\petbacker\FireShot Pro Screen Capture #026
+    www.Trulia.com 
+-->
+
+<body class="body-view-buddy">
+
+    <header class="header-view-buddy">
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark p-0 nav-panel-result" id="nav-header">
+            <div class="container-fluid" style="padding-left: 5px;">
+                <a href="index.html" class="navbar-brand">
+                    <div class="logo-2"></div>
+                </a>
+
+                <button class="navbar navbar-toggler mr-3 mr-md-0" data-toggle="collapse" data-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Menu"><span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="menu-services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nuestros Servicios</a>
+                            <div class="dropdown-menu" ariallabelledby="menu-services">
+                                <a class="dropdown-item" href="#">Alojamiento de Mascotas</a>
+                                <a class="dropdown-item" href="#">Guardería de Mascotas</a>
+                                <a class="dropdown-item" href="#">Paseador de perros</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Iniciar Sesión</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="menu-registro" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registrarse</a>
+                            <div class="dropdown-menu" ariallabelledby="menu-registro">
+                                <a class="dropdown-item" href="#">Registrarse como Buddy</a>
+                                <a class="dropdown-item" href="#">Registrarse como Dueño</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Ayuda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-view-buddy">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- Ficha tecnica del buddy -->
+                    <div class="card-info-buddy">
+                        <div class="row">
+                            <div class="col-md-4 d-flex justify-content-center bordear">
+                                <div class="photo-buddy">
+                                    <img src="img/panel/avatar_photos/avatar2.png" alt="photo-buddy">
+                                </div>
+                            </div>
+                            <div class="col-md-3 d-flex align-items-center bordear">
+                                <div class="description-buddy">
+                                    <div class="info-buddy"><span class="name-buddy">Jean Smith</span><span class="address d-block">2.5 Km - San Pedro</span></div>
+                                    <div class="btn-container">
+                                        <div class="btn btn-info btn-contact">Contáctame</div>
+                                        <div class="btn btn-favorite d-inline">&lt;3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Este div es opcional - para agregar algun informacion si fuera necesario queda a criterio del programador, sino eliminarlo -->
+                            <div class="col-md-5 d-flex align-items-center bordear">
+                                <div class=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Panel de informacion general de servicios del buddy -->
+            <div class="row info-buddy-wrap">
+                <div class="col-md-4 p-0">
+                    <!-- Columna izquierda de la información del buddy -->
+                    <div class="info-wrapper">
+                        <div class="container-price">
+                            <h4>Mis servicios</h4>
+                            <div class="info-service d-flex justify-content-between align-items-center">
+                                <div class="service-description">
+                                    <i class=""></i><span class="font-weight-bold">Alojamiento</span>
+                                    <span class="d-block"><small>Es un hotel de mascotas</small></span>
+                                </div>
+                                <div class="service-price text-center">
+                                    <span class="font-weight-bold">$20</span>
+                                    <small class="d-block">por noche</small>
+                                </div>
+                            </div>
+                            <div class="info-service d-flex justify-content-between align-items-center">
+                                <div class="service-description">
+                                    <i class=""></i><span class="font-weight-bold">Alojamiento</span>
+                                    <span class="d-block"><small>Es un hotel de mascotas</small></span>
+                                </div>
+                                <div class="service-price text-center">
+                                    <span class="font-weight-bold">$20</span>
+                                    <small class="d-block">por noche</small>
+                                </div>
+                            </div>
+                            <div class="info-service d-flex justify-content-between align-items-center">
+                                <div class="service-description">
+                                    <i class=""></i><span class="font-weight-bold">Alojamiento</span>
+                                    <span class="d-block"><small>Es un hotel de mascotas</small></span>
+                                </div>
+                                <div class="service-price text-center">
+                                    <span class="font-weight-bold">$20</span>
+                                    <small class="d-block">por noche</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="container-skills">
+                            <h4>Habilidades extras</h4>
+                            <ul class="list-skills">
+                                <li class="item-skill">Administración de medicamentos inyectables</li>
+                                <li class="item-skill">Administración de medicamentos orales</li>
+                                <li class="item-skill">Experiencia con perros de necesidades especiales</li>
+                                <li class="item-skill">Experiencia en entrenamiento</li>
+                                <li class="item-skill">+5 años de experiencia</li>
+                                <li class="item-skill">Hablo ingles</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="container-preferences">
+                            <h4>Tamaños aceptados</h4>
+                            <div class="dog-size-wrap d-flex justify-content-around ">
+                                <div class="item-size">
+                                    <i class=""></i>
+                                    <span class="">1-12<small class="d-block text-center">kg</small></span>
+                                </div>
+                                <div class="item-size ">
+                                    <i class=""></i>
+                                    <span class="">12-20<small class="d-block text-center">kg</small></span>
+                                </div>
+                                <div class="item-size">
+                                    <i class=""></i>
+                                    <span class="">20-35<small class="d-block text-center">kg</small></span>
+                                </div>
+                                <div class="item-size">
+                                    <i class=""></i>
+                                    <span class="">+35<small class="d-block text-center">kg</small></span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- En esta seccion se debe de colocar el calendario de disponibilidad del buddy -->
+                        <div class="container-availability">
+                            <h4>Disponibilidad</h4>
+                            <div class="calendar-wrap d-flex justify-content-center" id="">
+                                <p>AQUI SE COLOCA EL CALENDARIO</p>
+                            </div>
+                            <div class="calendar-info d-flex justify-content-center">
+                                <div class="indicator-orange"></div>
+                                <div class="status">Disponible</div>
+                                <div class="indicator-gray"></div>
+                                <div class="status">No Disponible</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Columna derecha de la información del buddy -->
+                <div class="col-md-8 p-0">
+                    <div class="info-wrapper-2">
+                        <div class="about-buddy">
+                            <h4>Sobre mi</h4>
+                            <div class="about-buddy-body text-capitalize">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat error, veritatis, ex cumque laboriosam, minus ipsum nesciunt vitae tempora aspernatur explicabo sequi deleniti dolores labore sit magnam nihil repellat fuga doloribus
+                                    eos. Magni mollitia aliquam corporis praesentium consequuntur aliquid consectetur?</p>
+                                <p>Veritatis laudantium iste veniam possimus est, error facere non distinctio debitis illum, sint dolorem et esse enim eveniet, commodi expedita. Quos consequatur, voluptatibus voluptas iusto temporibus impedit nisi cum. Nesciunt
+                                    odit numquam corporis. Minus vel eum aliquam veniam nisi consequatur.</p>
+                                <p>Itaque aspernatur inventore nulla rem porro, qui cum tempora aperiam, aliquid deleniti ratione non! Dolorum repudiandae, eveniet laborum adipisci quo quidem omnis pariatur, nihil unde voluptatem aspernatur, quas obcaecati quod
+                                    itaque similique iste repellendus non culpa incidunt iusto illum earum.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="review">
+                            <h4>¿Qué opinan mis clientes?</h4>
+                            <div class="review-content">
+                                <div class="media">
+                                    <img src="img/panel/avatar_photos/avatar4.png" class="align-self-start mr-3" alt="">
+                                    <div class="media-body">
+                                        <div class="media-body-talk">
+                                            <div class="review-header d-flex  justify-content-between align-items-center">
+                                                <h6><span class="font-weight-bold">Joseph, </span> <span class="date-review">20 Ago 2019</span></h6>
+                                                <div class="rating">*****</div>
+                                            </div>
+                                            <p class="text-capitalize">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                                Donec lacinia congue felis in faucibus.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <img src="img/panel/avatar_photos/avatar3.png" class="align-self-start mr-3" alt="">
+                                    <div class="media-body">
+                                        <div class="media-body-talk">
+                                            <div class="review-header d-flex  justify-content-between align-items-center">
+                                                <h6><span class="font-weight-bold">Joseph, </span> <span class="date-review">20 Ago 2019</span></h6>
+                                                <div class="rating">*****</div>
+                                            </div>
+                                            <p class="text-capitalize">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                                Donec lacinia congue felis in faucibus.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <img src="img/panel/avatar_photos/avatar1.png" class="align-self-start mr-3" alt="">
+                                    <div class="media-body">
+                                        <div class="media-body-talk">
+                                            <div class="review-header d-flex  justify-content-between align-items-center">
+                                                <h6><span class="font-weight-bold">Joseph, </span> <span class="date-review">20 Ago 2019</span></h6>
+                                                <div class="rating">*****</div>
+                                            </div>
+                                            <p class="text-capitalize">Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla.
+                                                Donec lacinia congue felis in faucibus.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="location-buddy">
+                            <h4>Localización</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus temporibus molestiae assumenda, sint at similique.</p>
+                            <div class="map-container-buddy">
+                                <div class="ml-3" id="map-buddy">
+                                    <!-- Este mapa esta puesto provisional (prueba) hay que eliminarlo y hacer uso de la API de google map o el servicio de mapa de preferencia -->
+                                    <iframe width="98%" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.uk/maps?f=q&source=s_q&hl=en&geocode=&815&sspn=8.047465,13.666992&ie=UTF8&hq=&hnear=15+Springfield+Way,+Hythe+CT21+5SH,+United+Kingdom&t=m&z=14&ll=51.077429,1.121722&output=embed"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- SECCION DE FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="w-head">
+                        <h4><span>Sobre PetBuddy</span></h4>
+                    </div>
+                    <div class="w-body">
+                        <ul>
+                            <a href="#">Quienes somos</a>
+                            <a href="#">Centro de Ayuda</a>
+                            <a href="#">Términos y Condiciones</a>
+                            <a href="#">Política de Privacidad</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="w-head">
+                        <h4><span>Servicios para Mascotas</span></h4>
+                    </div>
+                    <div class="w-body">
+                        <ul>
+                            <a href="#">Alojamiento</a>
+                            <a href="#">Cuidado de Mascotas</a>
+                            <a href="#">Paseo de Perros</a>
+                            <a href="#">Guardería</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="w-head">
+                        <h4><span>Amante de Mascotas</span></h4>
+                    </div>
+                    <div class="w-body">
+                        <ul>
+                            <a href="#">Trabaja con Nosotros</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="w-head">
+                        <h4><span>Contáctenos</span></h4>
+                    </div>
+                    <div class="w-body">
+                        <ul>
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">Linkedin</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SECCION DE COPYRIGHT -->
+    <section class="footer-copyright">
+        <div class="container">
+            <div class="row align-items-center justify-content-center ">
+                <div class="col-auto copyright">
+                    <p class="text-center d-block d-sm-inline">&copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> PetBuddy.</p><span class="copyright"> Todos los derechos reservados.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/scripts.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/slick/slick.min.js"></script>
+
+    <!-- Script para consumir API google map - recomendable hacerlo en script aparte y enlazarlo al html -->
+    <script>
+        var map;
+        var geocoder;
+        var crLat = 9.9257827;
+        var crLng = -84.0747275;
+
+        function initMap() {
+            geocoder = new google.maps.Geocoder();
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: {
+                    lat: crLat,
+                    lng: crLng
+                },
+                zoom: 15,
+                mapTypeId: google.maps.MapTypeId.HYBRID
+                    // mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+            marker = new google.maps.Marker({
+                map: map,
+                draggable: true,
+                animation: google.maps.Animation.DROP,
+                position: {
+                    lat: crLat,
+                    lng: crLng
+                }
+            });
+            google.maps.event.addListener(marker, 'dragend', function() {
+                onMakerMove(marker);
+            });
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3cOQNB4cQjQDSGWiB_nT2H2pEOuD3w60&callback=initMap" async defer></script>
+
+</body>
+
+</html>

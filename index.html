@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>PetBuddy - Es amor a tu mascota</title>
+    <link rel="stylesheet" href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <!-- <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+    <!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"/> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"/> -->
+</head>
+
+<body>
+    <!-- 
+		--- LISTA DE SERVICIOS ---
+		- Alojamiento u hotel de Mascotas
+		- Cuidado de Mascotas 
+		- Guarderia de Mascotas 
+		- Paseo de Perros
+
+		--- SERVICIOS EXTRAS ---
+
+		- Adiestramiento de Mascotas
+		- Peluquería de Mascotas
+		- Taxi de Mascotas
+		- Veterinario
+	-->
+
+    <!-- SECCION DE MENU DE NAVEGACION -->
+    <header>
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark p-md-0 nav-header" id="nav-header">
+            <div class="container">
+                <a href="index.html" class="navbar-brand">
+                    <div class="logo-2"></div>
+                </a>
+
+                <button class="navbar navbar-toggler mr-3 mr-md-0" data-toggle="collapse" data-target="#nav-menu" aria-controls="nav-menu" aria-expanded="false" aria-label="Menu"><span class="navbar-toggler-icon"></span>
+				</button>
+
+                <div class="collapse navbar-collapse" id="nav-menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="menu-services" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Nuestros Servicios</a>
+                            <div class="dropdown-menu" ariallabelledby="menu-services">
+                                <a class="dropdown-item" href="#">Alojamiento de Mascotas</a>
+                                <a class="dropdown-item" href="#">Guardería de Mascotas</a>
+                                <a class="dropdown-item" href="#">Paseador de perros</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="menu-registro" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Registrarse</a>
+                            <div class="dropdown-menu" ariallabelledby="menu-registro">
+                                <a class="dropdown-item" href="#">Registrarse como Buddy</a>
+                                <a class="dropdown-item" href="#">Registrarse como Dueño</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" id="menu-login" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Iniciar Sesión</a>
+                            <div class="dropdown-menu" ariallabelledby="menu-login" id="login-dp">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-login-wrap">
+                                            Con
+                                            <div class="social-buttons-login">
+                                                <a href="#" class="btn btn-fb"> Facebook</a>
+                                                <a href="#" class="btn btn-tw"> Twitter</a>
+                                            </div>
+                                            <div class="">
+                                                o bien
+                                            </div>
+                                            <form class="form" action="" method="" id="login-nav">
+                                                <div class="form-group">
+                                                    <input type="email" id="email" class="form-control" placeholder="Email" name="email">
+                                                </div>
+                                                <div class="form-group">
+                                                    <input type="password" id="password" class="form-control" placeholder="Contraseña" name="password">
+                                                    <div class="help-block text-right"><a href="">Olvidé la contraseña</a></div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <button type="submit" class="btn btn-primary btn-block">Iniciar Sesión</button>
+                                                </div>
+                                                <div class="form-group form-check">
+                                                    <input type="checkbox" class="form-check-input" id="ck-remember">
+                                                    <label class="form-check-label" for="ck-remember">Recordar</label>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Ayuda</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- SECCION BANNER PRINCIPAL Y SECCION DE BUSQUEDA -->
+    <section id="hero-main" class="alto">
+        <div class="container">
+            <div class="row justify-content-center align-items-center alto">
+                <div class="col-10">
+                    <div class="hero-info">
+                        <h2>Busca tu PetBuddy de preferencia</h2>
+                        <h5>Los mejores cuidadores y paseadores de mascotas de Costa Rica a tu servicio</h5>
+                    </div>
+                    <!-- PANEL DE BUSQUEDA -->
+                    <div class="search-container">
+                        <div class="form-container">
+                            <form class="" action="#" method="get">
+                                <div class="row form-row d-none d-md-block mb-4">
+                                    <div class="form-group d-flex justify-content-center btn-group-toggle" data-toggle="buttons">
+                                        <label class="form-check-label btn btn-find d-flex justify-content-center align-items-center col">
+                                            <input class="form-check-input" type="radio" name="options" id="radio1" value="option1">PetServices
+                                        </label>
+                                        <label class="form-check-label btn btn-find d-flex justify-content-center align-items-center col">
+                                            <input class="form-check-input" type="radio" name="options" id="radio1" value="option1">PetServices
+                                        </label>
+                                        <label class="form-check-label btn btn-find d-flex justify-content-center align-items-center col">
+                                            <input class="form-check-input" type="radio" name="options" id="radio1" value="option1">PetServices
+                                        </label>
+                                        <label class="form-check-label btn btn-find d-flex justify-content-center align-items-center col">
+                                            <input class="form-check-input" type="radio" name="options" id="radio1" value="option1">PetServices
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group col-md-3">
+                                        <select class="f-select" id="location" name="provincia">
+                                            <option selected disable hidden>Seleccione una provincia</option>
+                                            <option value="1">San José</option>
+                                            <option value="2">Alajuela</option>
+                                            <option value="3">Cartago</option>
+                                            <option value="4">Heredia</option>
+                                            <option value="5">Guanacaste</option>
+                                            <option value="6">Puntarenas</option>
+                                            <option value="7">Limón</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <i class=""></i>
+                                        <input type="text" class="f-input date" id="date" placeholder="Inicio">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <i class=""></i>
+                                        <input type="text" class="f-input date" id="date" placeholder="Finalizacion">
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <i class=""></i>
+                                        <input type="submit" name="submit" id="submit" value="Buscar Buddy" class="btn-search">
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION DE SERVICIOS -->
+    <section class="services d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="service-title text-center"><span>Nuestros Servicios</span></h3>
+                    <div class="service-text text-justify">
+                        <p>Cuando necesites contratar a alguien ya sea un cuidador de mascotas, un paseador de perros u otro servicio para tu mascota. PetBuddy los encuentra por ti; ya que conectamos a sus mascotas con los servicios locales de confianza
+                            en Costa Rica de manera rápida y ágil.</p>
+                        <p>Por eso: Consulte los precios estimados y lea las reseñas de los cuidadores de mascotas o paseadores de perros de la familia de PetBuddy.</p>
+                        <p class="text-center"><strong>¡Encontrar un servicio para tu mascota nunca fue tan fácil!</strong></p>
+                    </div>
+                </div>
+                <!-- SECCION DE TARJETAS DE SERVICIO  
+                CADA SERVICIO HAY QUE AGREGARLE LA INFORMACION CORRESPONDIENTE -->
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-md-12 pt-3">
+                            <div class="row justify-content-center">
+                                <div class="col-md-4">
+                                    <div class="card-service">
+                                        <div class="card-icon">
+                                            <i class=""></i>
+                                        </div>
+                                        <h6 class="service-title"><strong>Alojamiento</strong></h6>
+                                        <p class="service-text">Ideal si necesitas un servicio nocturno para tu mascota.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card-service">
+                                        <div class="card-icon">
+                                            <i class=""></i>
+                                        </div>
+                                        <h6 class="service-title"><strong>Alojamiento</strong></h6>
+                                        <p class="service-text">Ideal si necesitas un servicio nocturno para tu mascota.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card-service">
+                                        <div class="card-icon">
+                                            <i class=""></i>
+                                        </div>
+                                        <h6 class="service-title"><strong>Alojamiento</strong></h6>
+                                        <p class="service-text">Ideal si necesitas un servicio nocturno para tu mascota.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <div class="row justify-content-center">
+                                <div class="col-md-4">
+                                    <div class="card-service">
+                                        <div class="card-icon">
+                                            <i class=""></i>
+                                        </div>
+                                        <h6 class="service-title"><strong>Alojamiento</strong></h6>
+                                        <p class="service-text">Ideal si necesitas un servicio nocturno para tu mascota.</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="card-service">
+                                        <div class="card-icon">
+                                            <i class=""></i>
+                                        </div>
+                                        <h6 class="service-title"><strong>Alojamiento</strong></h6>
+                                        <p class="service-text">Ideal si necesitas un servicio nocturno para tu mascota.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION QUE ES PETBUDDY Y PORQUE PETBUDDY -->
+    <section class="why-petbuddy d-flex align-items-center">
+        <div class="container">
+            <div class="row mb-4 mb-md-5">
+                <div class="col-12">
+                    <h3 class="text-center text-dark">¿Por qué escoger PetBuddy?</h3>
+                </div>
+            </div>
+            <div class="card-deck">
+                <div class="card">
+                    <div class="card-body">
+                        <strong><p class="card-title">Genial para tu Mascota</p></strong>
+                        <ul>
+                            <li><i></i>Atención y cuidado personalizado</li>
+                            <li><i></i>Sin jaulas ni perreras</li>
+                            <li><i></i>Estadía en un hogar cercano al suyo</li>
+                            <li><i></i>Ambiente de familia</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <strong><p class="card-title">Genial para ti</p></strong>
+                        <ul>
+                            <li><i></i>Reserva online</li>
+                            <li><i></i>Pagos seguros y protegidos</li>
+                            <li><i></i>Servicio al cliente</li>
+                            <li><i></i>Actualizaciones diarias con fotos</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-body">
+                        <strong><p class="card-title">Confianza y Seguridad</p></strong>
+                        <ul>
+                            <li><i></i>Perfiles revisados</li>
+                            <li><i></i>Reseña de trabajos anteriores</li>
+                            <li><i></i>Comunidad amante a las mascotas</li>
+                            <li><i></i>Comunicación directa en la plataforma</li>
+                            <li><i></i>Mascotas aseguradas</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION COMO FUNCIONA PETBUDDY -  PASOS PARA CONSEGUIR UN BUDDY 
+         ESTA SECCION SI DESEA SE AGREGA -->
+    <section class=|"">
+		<div class="row">
+			<div class="col">
+				
+			</div>
+		</div>
+	</section>
+
+    <!-- SECCION DE RESEÑAS 
+         ESTA SECCION IGUAL A LA ANTERIOR SI DESEA SE AGREGA  -->
+    <section class="">
+		<div class="container">
+            <div class="row">
+                <div class="col"></div>
+            </div>
+		</div>
+	</section>
+
+    <!-- SECCION DE PATROCINADORES
+         SE HACE USO DE UN PLUGIN LLAMADO SLICK.JS PARA EL CAROUSEL -->
+    <section class="partners d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="text-center text-dark">Patrocinadores</h3>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-12 slide-partner">
+                    <div class="col-md-6 col-xs-4"><img data-lazy="img/partners/logo-ascan.png"></div>
+                    <div class="col-md-6 col-xs-4"><img data-lazy="img/partners/logo-dogchow.png"></div>
+                    <div class="col-md-6 col-xs-4"><img data-lazy="img/partners/logo-dogui.png"></div>
+                    <div class="col-md-6 col-xs-4"><img data-lazy="img/partners/logo-purina.svg"></div>
+                    <div class="col-md-6 col-xs-4"><img data-lazy="img/partners/logo-dongato.png"></div>
+                    <div class="col-md-6 col-xs-4"><img data-lazy="img/partners/logo-eukanuba.png"></div>
+                    <div class="col-md-6 col-xs-4"><img data-lazy="img/partners/logo-kankan.png"></div>
+                    <div class="col-md-6 col-xs-4"><img data-lazy="img/partners/logo-mimados.png"></div>
+                    <div class="col-md-6 col-xs-4"><img data-lazy="img/partners/logo-pedigree.png"></div>
+                    <div class="col-md-6 col-xs-4"><img data-lazy="img/partners/logo-propet.png"></div>
+                    <div class="col-md-6 col-xs-4"><img data-lazy="img/partners/logo-proplan.png"></div>
+                    <div class="col-md-6 col-xs-4"><img data-lazy="img/partners/logo-royalcanin.svg"></div>
+                    <div class="col-md-6 col-xs-4"><img data-lazy="img/partners/logo-superperro.png"></div>
+                    <div class="col-md-6 col-xs-4"><img data-lazy="img/partners/logo-tidycats.png"></div>
+                    <div class="col-md-6 col-xs-4"><img data-lazy="img/partners/logo-whiskas.png"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION DE TESTIMONIOS - LO QUE DICEN NUESTROS DUEÑOS DE MASCOTAS -->
+    <!-- <section class="">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+    <!-- SECCION DE FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="w-head">
+                        <h4><span>Sobre PetBuddy</span></h4>
+                    </div>
+                    <div class="w-body">
+                        <ul>
+                            <a href="#">Quienes somos</a>
+                            <a href="#">Centro de Ayuda</a>
+                            <a href="#">Términos y Condiciones</a>
+                            <a href="#">Política de Privacidad</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="w-head">
+                        <h4><span>Servicios para Mascotas</span></h4>
+                    </div>
+                    <div class="w-body">
+                        <ul>
+                            <a href="#">Alojamiento</a>
+                            <a href="#">Cuidado de Mascotas</a>
+                            <a href="#">Paseo de Perros</a>
+                            <a href="#">Guardería</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="w-head">
+                        <h4><span>Amante de Mascotas</span></h4>
+                    </div>
+                    <div class="w-body">
+                        <ul>
+                            <a href="#">Trabaja con Nosotros</a>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                    <div class="w-head">
+                        <h4><span>Contáctenos</span></h4>
+                    </div>
+                    <div class="w-body">
+                        <ul>
+                            <a href="#">Facebook</a>
+                            <a href="#">Twitter</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">Linkedin</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SECCION DE COPYRIGHT -->
+    <section class="footer-copyright">
+        <div class="container">
+            <div class="row align-items-center justify-content-center ">
+                <div class="col-auto copyright">
+                    <p class="text-center d-block d-sm-inline">&copy;
+                        <script>
+                            document.write(new Date().getFullYear());
+                        </script> PetBuddy.</p><span class="copyright"> Todos los derechos reservados.</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/slick/slick.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	  $( function() { 
+	  	$( "#date" ).datepicker();
+	  } );
+  </script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script> -->
+</body>
+</html>
